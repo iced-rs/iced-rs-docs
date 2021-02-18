@@ -5,8 +5,10 @@ weight = 1
 
 This is the intro to `iced`.
 
-```rust
-fn main() {
-    println!("Hello world!");
-}
-```
+{{ code(path="hello-world/src/main.rs", section="test-section") }}
+
+Some more text.
+
+{{ code(path="hello-world/src/main.rs", section="another-section") }}
+
+This is the end.
