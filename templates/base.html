@@ -14,7 +14,7 @@
 
     <div class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="{{ config.base_url }}">
+        <a class="navbar-item" href="{{ config.base_url | safe}}">
           <img src="#" alt="iced logo">
         </a>
 
@@ -27,8 +27,8 @@
 
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="{{ get_url(path="@/docs/_index.md") }}">docs</a>
-          <a class="navbar-item" href="{{ get_url(path="@/tour/_index.md") }}">tour</a>
+          <a class="navbar-item" href="{{ get_url(path="@/docs/_index.md") | safe }}">docs</a>
+          <a class="navbar-item" href="{{ get_url(path="@/tour/_index.md") | safe }}">tour</a>
           <a class="navbar-item" href="https://github.com/hecrj/iced">github</a>
           <a class="navbar-item" href="https://iced.zulipchat.com">zulip</a>
         </div>
