@@ -1,1 +1,27 @@
 @import "search";
+
+.main-content {
+    width: 75%;
+}
+
+.table-of-contents {
+    width: 25%;
+}
+
+p, h2, h3, h4, h5, h6, .code {
+    margin-bottom: 2ex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.example-code {
+    padding: 0px;
+    margin: 0px;
+
+    pre {
+        padding: 0px;
+        margin: 0px;
+    }
+}

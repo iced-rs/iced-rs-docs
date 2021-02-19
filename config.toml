@@ -19,3 +19,4 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+code_dir = "https://github.com/cldershem/iced-rs-website/tree/main/code/"
