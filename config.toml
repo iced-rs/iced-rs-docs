@@ -1,6 +1,8 @@
 # The URL the site will be built for
 # base_url = "https://docs.iced.rs"
 base_url = "https://cldershem.github.io/iced-rs-website"
+title = "iced-rs"
+description = ""
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

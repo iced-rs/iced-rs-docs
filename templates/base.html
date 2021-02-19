@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iced.rs</title>
-  <link rel="icon" href="/favicon.ico?v=1.1"> 
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="icon" href="{{ get_url(path="favicon.ico?v=1.0") }}"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <div class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ config.base_url | safe}}">
-          <img src="/logo.png" alt="iced logo">
+          <img src="{{ get_url(path="logo.png") }}" alt="iced logo">
         </a>
 
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
@@ -29,13 +30,19 @@
 
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="{{ get_url(path="@/docs/_index.md") | safe }}">docs</a>
-          <a class="navbar-item" href="{{ get_url(path="@/tour/_index.md") | safe }}">tour</a>
+          <a class="navbar-item" href="{{ get_url(path="@/docs/_index.md") }}">docs</a>
+          <a class="navbar-item" href="{{ get_url(path="@/tour/_index.md") }}">tour</a>
           <a class="navbar-item" href="https://github.com/hecrj/iced">github</a>
           <a class="navbar-item" href="https://iced.zulipchat.com">zulip</a>
         </div>
         <div class="navbar-end">
-          <input type="search">
+          <div class="search-container">
+            <input id="search" type="search" placeholder="🔎 Search the docs">
+
+            <div class="search-results">
+              <div class="search-results__items"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +54,13 @@
       {% block content %} {% endblock %}
     </div>
   </section>
+
+  <footer>
+  </footer>
+
+  <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+  <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+  <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
 
 </body>
 

@@ -24,4 +24,3 @@
 - Tour doesn't work with zola server (should be fixed on next update)
 
 ## TODOs
-- setup search
