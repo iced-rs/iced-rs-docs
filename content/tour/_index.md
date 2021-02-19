@@ -1,12 +1,9 @@
 +++
-title = "List of tour."
+title = "Demo"
 sort_by = "weight"
 template = "tour.html"
 page_template = "tour-page.html"
 +++
 
-<script type="module">
-import init from "./tour.js";
-
-init('./tour_bg.wasm');
-</script>
+<iframe src="./demo" height="800" style="border:1px solid black; width:100%;">
+</iframe>
