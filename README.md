@@ -6,6 +6,8 @@
 - cd into repo
 - `zola serve`
 - docs are located in `content/docs`
+- every new markdown file in `/content/docs/` should automatically appear on `/docs`.
+- any headers should automatically appear automatically in the Table of Contents with anchor tags
 
 ## how to add example code to to the docs
 - code examples are in `code`
