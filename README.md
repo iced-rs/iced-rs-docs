@@ -22,5 +22,9 @@
 ## Issues
 - No source for tour
 - Tour doesn't work with zola server (should be fixed on next update)
+- links are being html escaped
+- wasm tour is kind of hacked together
+    - https://github.com/hecrj/iced/tree/master/web
+    - then some copy and pasting of a JS lib into the `tour.js` file
 
 ## TODOs
