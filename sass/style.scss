@@ -1,5 +1,15 @@
 @import "search";
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main-wrapper {
+  flex: 1;
+}
+
 .main-content {
     width: 75%;
 }
