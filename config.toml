@@ -1,6 +1,6 @@
 # The URL the site will be built for
 # base_url = "https://docs.iced.rs"
-base_url = "https://cldershem.github.io/iced-rs-website"
+base_url = "https://iced-rs.github.io/iced-rs-docs"
 title = "iced-rs"
 description = ""
 
@@ -19,5 +19,5 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-code_dir = "https://github.com/cldershem/iced-rs-website/tree/main/code/"
-repo_url = "https://github.com/cldershem/iced-rs-website"
+code_dir = "git remote add origin git@github.com:iced-rs/iced-rs-docs.git/tree/main/code/"
+repo_url = "git remote add origin git@github.com:iced-rs/iced-rs-docs.git"
