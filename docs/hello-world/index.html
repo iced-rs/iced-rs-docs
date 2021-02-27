@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>iced-rs</title>
+  <link rel="icon" href="https://iced-rs.github.io/iced-rs-docs/favicon.ico?v=1.0"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://iced-rs.github.io/iced-rs-docs/style.css"/>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://iced-rs.github.io/iced-rs-docs">
+          <img src="https://iced-rs.github.io/iced-rs-docs/logo.png" alt="iced logo">
+        </a>
+
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="https://iced-rs.github.io/iced-rs-docs/docs/">docs</a>
+          <a class="navbar-item" href="https://iced-rs.github.io/iced-rs-docs/tour/">tour</a>
+          <a class="navbar-item" href="https://github.com/hecrj/iced">github</a>
+          <a class="navbar-item" href="https://iced.zulipchat.com">zulip</a>
+        </div>
+        <div class="navbar-end">
+          <div class="search-container">
+            <input id="search" type="search" placeholder="🔎 Search the docs">
+
+            <div class="search-results">
+              <div class="search-results__items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="section" id="main-wrapper">
+    <div class="container main-content">
+      
+<h1 class="title">
+  hello world
+</h1>
+
+<section class="table-of-contents card">
+  <h2 class="card-header">Table of Contents</h2>
+  <ul class="card-content">
+    
+      <li>
+        <a href="https://iced-rs.github.io/iced-rs-docs/docs/hello-world/#install">Install</a>
+        
+      </li>
+    
+      <li>
+        <a href="https://iced-rs.github.io/iced-rs-docs/docs/hello-world/#basic-app">Basic App</a>
+        
+      </li>
+    
+      <li>
+        <a href="https://iced-rs.github.io/iced-rs-docs/docs/hello-world/#outro">outro</a>
+        
+          <ul>
+            
+              <li>
+                <a href="https://iced-rs.github.io/iced-rs-docs/docs/hello-world/#thing">thing</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+</section>
+
+<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<p><code>cargo install iced</code></p>
+<h2 id="basic-app">Basic App<a class="zola-anchor" href="#basic-app" aria-label="Anchor link for: basic-app">🔗</a></h2>
+<p>An example of a simple <code>iced</code> application....
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.</p>
+<div class="example-code">
+<pre style="background-color:#2b303b;">
+<code class="language-rust" data-lang="rust"><span style="color:#c0c5ce;">
+    println!(&quot;</span><span style="color:#a3be8c;">Hello, friend!</span><span style="color:#c0c5ce;">&quot;);
+    
+</span></code></pre>
+<p><a href="git remote add origin git@github.com:iced-rs/iced-rs-docs.git/tree/main/code/hello-world/src/main.rs">link to source</a></p>
+</div>
+<p>Some more text.</p>
+<div class="example-code">
+<pre style="background-color:#2b303b;">
+<code class="language-rust" data-lang="rust"><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> _thing = vec![</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">];
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> _another_thing = vec![</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">];
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> _yup = </span><span style="color:#b48ead;">match </span><span style="color:#d08770;">1 </span><span style="color:#c0c5ce;">{
+        _ =&gt; (),
+    };
+    
+</span></code></pre>
+<p><a href="git remote add origin git@github.com:iced-rs/iced-rs-docs.git/tree/main/code/hello-world/src/main.rs">link to source</a></p>
+</div>
+<p>This is the end.</p>
+<h1 id="outro">outro<a class="zola-anchor" href="#outro" aria-label="Anchor link for: outro">🔗</a></h1>
+<h2 id="thing">thing<a class="zola-anchor" href="#thing" aria-label="Anchor link for: thing">🔗</a></h2>
+<h3 id="other-thing">other thing<a class="zola-anchor" href="#other-thing" aria-label="Anchor link for: other-thing">🔗</a></h3>
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <a href="git remote add origin git@github.com:iced-rs/iced-rs-docs.git">edit these docs</a>
+        </div>
+        <div class="column">
+          <a href="https://docs.rs/crate/iced/0.2.0">api docs</a>
+        </div>
+        <div class="column">
+          <a href="https://iced.zulipchat.com/">zulip chat</a>
+        </div>
+        <div class="column">
+          <a href="https://github.com/hecrj/iced">github</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://iced-rs.github.io/iced-rs-docs/elasticlunr.min.js"></script>
+  <script type="text/javascript" src="https://iced-rs.github.io/iced-rs-docs/search_index.en.js"></script>
+  <script type="text/javascript" src="https://iced-rs.github.io/iced-rs-docs/search.js"></script>
+
+</body>
+
+</html>

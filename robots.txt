@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iced-rs.github.io/iced-rs-docs/sitemap.xml

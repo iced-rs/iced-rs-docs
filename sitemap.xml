@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://iced-rs.github.io/iced-rs-docs/</loc>
+    </url>
+    <url>
+        <loc>https://iced-rs.github.io/iced-rs-docs/docs/</loc>
+    </url>
+    <url>
+        <loc>https://iced-rs.github.io/iced-rs-docs/docs/hello-world/</loc>
+    </url>
+    <url>
+        <loc>https://iced-rs.github.io/iced-rs-docs/tour/</loc>
+    </url>
+    <url>
+        <loc>https://iced-rs.github.io/iced-rs-docs/tour/demo/</loc>
+    </url>
+</urlset>
